@@ -7,10 +7,10 @@
 const uint8_t bpp = 4; // amount of bits per pixel of the bmp file
 
 const uint8_t palette[16] = {
-    0x00, 0x00, 0x00, 0,  // black
+    0xff, 0xff, 0xff, 0,  // white
     0xcc, 0x66, 0x66, 0,  //
     0xff, 0xcc, 0xcc, 0,  //
-    0xff, 0xff, 0xff, 0}; // white
+    0x00, 0x00, 0x00, 0}; // black
 
 // merge chr layer rows (1bit per px) so we end up with a 16 bit row (2 bits per px)
 int merge_chr_rows(uint8_t a, uint8_t b)
