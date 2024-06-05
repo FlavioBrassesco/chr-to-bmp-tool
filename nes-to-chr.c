@@ -17,7 +17,7 @@ int main(int argc, char *argv[])
     fread(buffer, filelen, 1, f);
     fclose(f);
 
-    if (buffer[0] != 0x4E && buffer[1] != 0x45 && buffer[2] != 0x53 && buffer[3] != 0x1A)
+    if (buffer[0] != 0x4E || buffer[1] != 0x45 || buffer[2] != 0x53 || buffer[3] != 0x1A)
     {
         return 1;
     }
