@@ -39,7 +39,7 @@ void order_chr(uint8_t *buffer, uint8_t *chr, int chrsize)
         int table_end = layer0_ndx + chrsize / 2;
 
         // tile_ndx: index of the tile before ordering
-        for (int tile_ndx = 0, i = 0 + layer0_ndx; i < table_end; ++i)
+        for (int tile_ndx = 0, i = layer0_ndx; i < table_end; ++i)
         {
             uint8_t byte_ndx = i % 8;
             int final_tile_ndx = tile_ndx / 2; // where the tile should go
